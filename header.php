@@ -30,14 +30,35 @@
               ?> 
             </div>
             
-          </div>
-
-          <i class="fas fa-user-circle"></i>
-        </div>
-
-        
-         
-        
-        
+          </div>          
+        </div>               
       </nav>
+
+
+      <h2 id="blog-title">不自由な体で自由に生きる</h2>
+
+      <div id="nav-drawer2">
+          <input id="nav-input2" type="checkbox" class="nav-unshown2">
+          <label id="nav-open2" for="nav-input2"><i class="fas fa-user-circle fa-2x"></i></label>
+          <label class="nav-unshown2" id="nav-close2" for="nav-input2"></label>
+          <div id="nav-content2">
+            <div id="category2">
+              <h2>About me</h2>
+              <p>三好史子</p>
+              <p>SMA(脊髄性筋萎縮症)2型。<br>
+              一人暮らしをしながら、分身ロボットOriHimeを使って様々な実験に参加。</p>
+              <p>Follow me</p>
+              <div id="icons">
+                <a href="https://twitter.com/fukomalu" ><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/fumiko.miyoshi.9"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.instagram.com/hana42193/"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </div>
+              
+              
+            </div>
+            
+          </div>          
+      </div>     
+
+      
     </header>

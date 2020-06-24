@@ -1,6 +1,6 @@
-<footer>
+<!-- <footer>
       <small>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</small>
-</footer>
+</footer> -->
 
   </div>
   <?php wp_footer(); ?>

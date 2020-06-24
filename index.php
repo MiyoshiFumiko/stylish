@@ -30,13 +30,19 @@ echo do_shortcode('[smartslider3 slider="4"]');
       <?php endif; ?>
     </div>
      -->
-    <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
+    <!-- <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
 
-    <p class="header-p2">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
+    <p class="header-p2">進化し続ける「街」<br>アメリカンビレッジマガジン</p> -->
+    <div id="message">
+      <p>歩くことも、寝返りを打つことも、一人ではできない。<br>
+      でも誰かがいれば、テクノロジーがあれば、<br>
+      できることは無限大。<br>
+      やりたいことを諦めずに、挑み続けるブログ。</p>
+    </div>
 
     <section>
     <?php if (have_posts ()): ?>
-      <h2 class="sub-title">Latest Articles</h2>
+      <!-- <h2 class="sub-title">Latest Articles</h2> -->
 
       <ul class="articles">
         <?php while(have_posts()): the_post(); ?>
@@ -47,17 +53,17 @@ echo do_shortcode('[smartslider3 slider="4"]');
                <?php else: ?>
                 <img  class="article-img" src="<?php echo get_template_directory_uri(); ?>" alt="">
                <?php endif; ?>
-            </a>
+            
+               <p class="title"><?php the_title(); ?></p>
+               <p class="date"><?php echo get_the_date('20y/m/d'); ?></p>
+            
                
-            <p class="date"><?php echo get_the_date('20y/m/d'); ?></p>
-            <p class="title"><?php the_title(); ?></p>
-               
-            <div class="read-more-div">
+            <!-- <div class="read-more-div">
               <p class="read-more"> <a href="<?php the_permalink(); ?>">READ MORE</a></p>
               
-            </div>
+            </div> -->
              
-            
+            </a>
           </li>
         <?php endwhile; ?>
       
@@ -66,6 +72,21 @@ echo do_shortcode('[smartslider3 slider="4"]');
     <?php endif; ?>
 
       </ul>
+
+      <?php 
+      if( function_exists("the_pagination") ) {
+        $pagination_array = the_pagination();
+        // 配列じゃないなら非表示
+        if ( !is_array($pagination_array) ) return;
+        echo '<ul class="nav-pagination">';
+        foreach($pagination_array as $key => $val) {
+          echo '<li class="item">'.$pagination_array[$key].'</li>';
+        }
+        echo '</ul>';
+      }
+
+    ?> 
+
     </section>
 
     
