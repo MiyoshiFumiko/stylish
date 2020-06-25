@@ -48,7 +48,7 @@
           <div id="nav-content2">
             <div id="category2">
               <h2>About me</h2>
-              <p>三好史子</p>
+              <p>ふー</p>
               <p>SMA(脊髄性筋萎縮症)2型。<br>
               一人暮らしをしながら、分身ロボットOriHimeを使って様々な実験に参加。</p>
               <p>Follow me</p>

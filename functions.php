@@ -27,4 +27,11 @@ function the_pagination() {
       'end_size'     => 2,
       'mid_size'     => 2
     ) );
-  }
+}
+
+add_filter( 'show_admin_bar', 'set_adminbar' );
+
+function set_adminbar( $adminbar ) {
+ $adminbar  = true; /* true:表示 false:非表示 */
+ return $adminbar;
+}
