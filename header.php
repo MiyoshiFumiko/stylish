@@ -22,6 +22,10 @@
           <div id="nav-content">
             <div id="category">
               <h2>Category</h2>
+              <div id="home-div">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="home">Home</a>
+              </div>
+              
               <?php wp_nav_menu( array(
                   'theme_location'=>'mainmenu', 
                   'container'     =>'', 
@@ -35,7 +39,7 @@
       </nav>
 
 
-      <h2 id="blog-title">不自由な体で自由に生きる</h2>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h2 id="blog-title">不自由な体で自由に生きる</h2></a>
 
       <div id="nav-drawer2">
           <input id="nav-input2" type="checkbox" class="nav-unshown2">

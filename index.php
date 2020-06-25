@@ -91,4 +91,3 @@ echo do_shortcode('[smartslider3 slider="4"]');
 
     
 
-<?php get_footer(); ?>

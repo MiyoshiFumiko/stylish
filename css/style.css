@@ -277,6 +277,10 @@ h1 {
   font-size: 25px;
 }
 
+header a {
+  text-decoration: none;
+}
+
 #blog-title {
   color: white;
   font-size: 24px;
@@ -490,12 +494,22 @@ form :nth-child(3){
  
 
 footer{
-  margin-top: 80px;
+  /* margin-top: 80px; */
   height: 120px;
-  background-color: black;
+  background-color: #58A4B0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:nth-child(2){
+  margin-left: 70px;
 }
 
 small{
@@ -506,17 +520,26 @@ small{
 .main-content{
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 25px;
-  line-height: 60px;
+  font-size: 15px;
+  line-height: 40px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
 }
 
 .main-title{
   font-size: 30px;
-  color: rgb(201, 191, 1);
+  color: #58A4B0;
+  line-height: 40px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .main-box{
-  min-height: 400px;
+  background-color: white;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
 #main-nav {
@@ -533,7 +556,7 @@ small{
   padding-bottom: 30px;
 }
 
-#main-nav li {
+#main-nav li, #home-div {
   text-align: center;
   margin-bottom: 30px;
   /* background-color: #CBA135; */
@@ -543,10 +566,10 @@ small{
   margin-right: 30px;
 }
 
-#main-nav li a{
+#main-nav li a, #home{
   /* margin-right: 30px; */
   /* margin-top: 50px; */
-  font-size: 30px;
+  font-size: 24px;
   /* text-decoration: none; */
   color: #58A4B0;
   /* margin: 0 auto; */
