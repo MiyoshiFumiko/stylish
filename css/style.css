@@ -613,7 +613,7 @@ label i {
   padding-left: 30px;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1024px) {
   #nav-content, #nav-content2 {
     max-width: 50%;
   }
@@ -707,3 +707,17 @@ label i {
   }
 } 
 
+@media screen and (max-width:480px) {
+  #blog-title {
+    font-size: 18px;
+  }
+
+  #message p {
+    font-size: 12px;
+    -webkit-transform: translate(-50%, -120%);
+  }
+
+  .nav-pagination li, .nav-pagination li a {
+    font-size: 15px;
+  }
+}
