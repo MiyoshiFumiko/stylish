@@ -94,7 +94,8 @@ header {
 
 #nav-drawer2 {
   position: relative;
-  margin-right: 60px;
+  /* margin-right: 60px; */
+
 }
 
 /*チェックボックス等は非表示に*/
@@ -270,6 +271,7 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 60px;
+  padding-right: 60px;
   justify-content: space-between;
 }
 
@@ -319,11 +321,13 @@ header a {
 }
 
 #message p {
+  background-color: rgba(88,164,176,.7);
+  padding: 20px 20px 20px 20px;
   position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -250%);
+    -webkit-transform: translate(-50%, -150%);
     -ms-transform: translate(-50%, -50%);
 }
 
@@ -359,8 +363,8 @@ header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 150px;
+  margin-right: 150px;
   /* width: 900px; */
   /* margin: 0 auto; */
 }
@@ -451,7 +455,7 @@ header a {
     }
 } */
 
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
 
 
     .header-right{
@@ -465,7 +469,7 @@ header a {
         align-items: center;
 
     }
-}
+} */
 
 .cotact-title{
   font-size: 25px;
@@ -583,7 +587,7 @@ small{
 
 label i {
   color: white;
-  margin-right: 60px;
+  cursor: pointer;
 }
 
 #icons {
@@ -607,6 +611,16 @@ label i {
   line-height: 50px;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+@media screen and (max-width:1050px) {
+  #nav-content, #nav-content2 {
+    max-width: 50%;
+  }
+
+  #message p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width:767px){
@@ -673,5 +687,23 @@ label i {
     margin: 0 auto;
   }
   
- 
+  #nav-content, #nav-content2 {
+    max-width: 70%;
+  }
+
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-box {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .main-title, .main-content {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 } 
+

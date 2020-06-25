@@ -34,10 +34,14 @@ echo do_shortcode('[smartslider3 slider="4"]');
 
     <p class="header-p2">進化し続ける「街」<br>アメリカンビレッジマガジン</p> -->
     <div id="message">
-      <p>歩くことも、寝返りを打つことも、一人ではできない。<br>
-      でも誰かがいれば、テクノロジーがあれば、<br>
+      <p>歩くことも、<br>
+      寝返りを打つことも、<br>
+      一人ではできない。<br>
+      でも誰かがいれば、<br>
+      テクノロジーがあれば、<br>
       できることは無限大。<br>
-      やりたいことを諦めずに、挑み続けるブログ。</p>
+      やりたいことを諦めずに、<br>
+      挑み続けるブログ。</p>
     </div>
 
     <section>
@@ -91,3 +95,4 @@ echo do_shortcode('[smartslider3 slider="4"]');
 
     
 
+    <?php get_footer(); ?>
