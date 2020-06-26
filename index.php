@@ -53,7 +53,7 @@ echo do_shortcode('[smartslider3 slider="4"]');
           <li class="article">
             <a href="<?php the_permalink(); ?>">
                <?php if (has_post_thumbnail()): ?>
-                <?php the_post_thumbnail('thumbnail'); ?>
+                <?php the_post_thumbnail('full'); ?>
                <?php else: ?>
                 <img  class="article-img" src="<?php echo get_template_directory_uri(); ?>" alt="">
                <?php endif; ?>
