@@ -1,20 +1,66 @@
 <?php get_header(); ?>
 
-<main class="main-box">
+<div id="main-div">
 
-   <?php if (have_posts()): ?>
+  <main class="main-box">
 
-    <?php while (have_posts()): the_post(); ?>
+  <?php if (have_posts()): ?>
 
-    <h2 class="main-title"><?php the_title(); ?></h2>
+  <?php while (have_posts()): the_post(); ?>
 
-    <div class="main-content"><?php the_content(); ?></div>
+  <h2 class="main-title"><?php the_title(); ?></h2>
 
-   <?php endwhile; ?>
+  <div class="main-content"><?php the_content(); ?></div>
 
-   <?php endif; ?>
+  <?php endwhile; ?>
 
-</main>
+  <?php endif; ?>
+
+  </main>
+
+  <aside>
+
+    <ul id="present">
+      <p>最近の投稿</p>
+      <?php
+      $args = array(
+        'posts_per_page' => 5 // 表示件数の指定
+      );
+      $posts = get_posts( $args );
+      foreach ( $posts as $post ): // ループの開始
+      setup_postdata( $post ); // 記事データの取得
+      ?>
+      <li>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </li>
+      <?php
+      endforeach; // ループの終了
+      wp_reset_postdata(); // 直前のクエリを復元する
+      ?>
+    </ul>
+
+    <div id="category2">
+      <h2>About me</h2>
+      <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t1.0-9/80995057_2549749571906827_314256550820577280_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=hgzWlRx5A6cAX-oZFpQ&_nc_ht=scontent-itm1-1.xx&oh=905a9aef0ab4003e2a09f037d2435f2f&oe=5F233F66" alt="">
+      <p>ふー</p>
+      <p>SMA(脊髄性筋萎縮症)2型。<br>
+      一人暮らしをしながら、分身ロボットOriHimeを使って様々な実験に参加。</p>
+      <p>Follow me</p>
+      <div id="icons">
+        <a href="https://twitter.com/fukomalu" ><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/fumiko.miyoshi.9"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.instagram.com/hana42193/"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://github.com/"><i class="fab fa-github fa-2x"></i></a>
+      </div>     
+    </div>  
+
+  </aside>
+
+  
+
+</div>
+
+
 
 <footer>
     <?php if (get_previous_post()):?>

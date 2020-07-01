@@ -48,6 +48,7 @@
           <div id="nav-content2">
             <div id="category2">
               <h2>About me</h2>
+              <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t1.0-9/80995057_2549749571906827_314256550820577280_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=hgzWlRx5A6cAX-oZFpQ&_nc_ht=scontent-itm1-1.xx&oh=905a9aef0ab4003e2a09f037d2435f2f&oe=5F233F66" alt="">
               <p>ふー</p>
               <p>SMA(脊髄性筋萎縮症)2型。<br>
               一人暮らしをしながら、分身ロボットOriHimeを使って様々な実験に参加。</p>
@@ -56,6 +57,7 @@
                 <a href="https://twitter.com/fukomalu" ><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="https://www.facebook.com/fumiko.miyoshi.9"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://www.instagram.com/hana42193/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://github.com/"><i class="fab fa-github fa-2x"></i></a>
               </div>
               
               

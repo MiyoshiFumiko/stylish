@@ -71,9 +71,9 @@ echo do_shortcode('[smartslider3 slider="4"]');
           </li>
         <?php endwhile; ?>
       
-    <?php else: ?>
-      <p>最近の投稿はありません</p>
-    <?php endif; ?>
+        <?php else: ?>
+          <p>最近の投稿はありません</p>
+        <?php endif; ?>
 
       </ul>
 
