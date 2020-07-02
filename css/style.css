@@ -233,6 +233,7 @@ header a {
 #blog-title {
   color: white;
   font-size: 24px;
+  padding-top: 5px;
 }
 
 .top-image {
@@ -481,6 +482,14 @@ label i {
   display: flex;
 }
 
+aside {
+  width: 30%;
+}
+
+main {
+  width: 70%;
+}
+
 #present {
   background-color: white;
   padding: 20px;
@@ -500,6 +509,27 @@ aside > #category2 {
 #present li a {
   text-decoration: none;
   color: #58A4B0;
+}
+
+#aside-category {
+  background-color: white;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+#aside-category > p {
+  padding: 20px;
+}
+
+#aside-category > ul > li {
+  text-align: left;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 20px;
+}
+
+#aside-category > ul > li > a {
+  font-size: 16px;
 }
 
 @media screen and (max-width:1024px) {
@@ -562,8 +592,12 @@ aside > #category2 {
     padding-left: 30px;
   }
 
-  #present, aside > #category2 {
+  aside {
     display: none;
+  }
+
+  main {
+    width: 100%;
   }
 } 
 
@@ -604,4 +638,86 @@ aside > #category2 {
 
 #toc_container {
   margin: auto;
+}
+
+.blog-card {
+  border: 2px solid #e5e5e5;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1em 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .2);
+  -moz-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.blog-card a {
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-card a:hover {
+  color: #333;
+  background: rgba(235, 235, 235, 0.8);
+  text-decoration: none;
+}
+
+.blog-card-thumbnail {
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.blog-card-thumbnail img {
+  padding: 0;
+  max-width: 100%;
+}
+
+.blog-card-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0.4em;
+  border-left: #e5e5e5 solid 2px;
+}
+
+.blog-card-title {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-card-excerpt {
+  display: none;/*消します*/
+}
+
+.blog-card .clear {
+  clear: both;
+}
+
+@media screen and (max-width: 500px) {
+  .blog-card-title {
+    font-size: .85em;
+  }
+  .blog-card-thumbnail {
+    width: 160px;
+  }
 }

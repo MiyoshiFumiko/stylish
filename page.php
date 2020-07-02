@@ -48,6 +48,7 @@
                     'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
         ?> 
     </div>
+   
 
     <div id="category2">
       <h2>About me</h2>

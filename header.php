@@ -17,7 +17,7 @@
       <nav class="menu">
         <div id="nav-drawer">
           <input id="nav-input" type="checkbox" class="nav-unshown">
-          <label id="nav-open" for="nav-input"><span></span></label>
+          <label id="nav-open" for="nav-input"><i class="fas fa-bars fa-2x"></i></label>
           <label class="nav-unshown" id="nav-close" for="nav-input"></label>
           <div id="nav-content">
             <div id="category">
@@ -42,10 +42,13 @@
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h2 id="blog-title">不自由な体で自由に生きる</h2></a>
 
       <div id="nav-drawer2">
+
           <input id="nav-input2" type="checkbox" class="nav-unshown2">
           <label id="nav-open2" for="nav-input2"><i class="fas fa-user-circle fa-2x"></i></label>
           <label class="nav-unshown2" id="nav-close2" for="nav-input2"></label>
+
           <div id="nav-content2">
+
             <div id="category2">
               <h2>About me</h2>
               <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t1.0-9/80995057_2549749571906827_314256550820577280_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=hgzWlRx5A6cAX-oZFpQ&_nc_ht=scontent-itm1-1.xx&oh=905a9aef0ab4003e2a09f037d2435f2f&oe=5F233F66" alt="">
@@ -55,15 +58,14 @@
               <p>Follow me</p>
               <div id="icons">
                 <a href="https://twitter.com/fukomalu" ><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.facebook.com/fumiko.miyoshi.9"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.instagram.com/hana42193/"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a href="https://github.com/"><i class="fab fa-github fa-2x"></i></a>
-              </div>
-              
-              
+                <a href="https://www.instagram.com/hana42193/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/fumiko.miyoshi.9"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://github.com/MiyoshiFumiko"><i class="fab fa-github fa-2x"></i></a>
+              </div>              
             </div>
             
-          </div>          
+          </div> 
+                   
       </div>     
 
       
