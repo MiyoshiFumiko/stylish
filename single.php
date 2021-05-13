@@ -51,7 +51,7 @@
 
     <div id="category2">
       <h2>About me</h2>
-      <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t1.0-9/80995057_2549749571906827_314256550820577280_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=hgzWlRx5A6cAX-oZFpQ&_nc_ht=scontent-itm1-1.xx&oh=905a9aef0ab4003e2a09f037d2435f2f&oe=5F233F66" alt="">
+      <img src="https://pbs.twimg.com/profile_images/1285137262154375168/_pETwtsz_400x400.jpg" alt="">
       <p>ふー</p>
       <p>SMA(脊髄性筋萎縮症)2型。<br>
       一人暮らしをしながら、分身ロボットOriHimeを使って様々な実験に参加。</p>
